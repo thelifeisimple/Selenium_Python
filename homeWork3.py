@@ -134,7 +134,7 @@ def clase_principal():
             if (puertas_ar != False):
                 break
 
-        while False:
+        while True:
             color = input("Elija un numero con el color deseado y enter: \n1 - Blanco \n2 - Azul \n3 - Negro \n")
             color_ar = tipo_color(color)
             if(color_ar != False):
