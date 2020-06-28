@@ -134,7 +134,7 @@ def clase_principal():
             if (puertas_ar != False):
                 break
 
-        while False:
+        while True:
             color = input("Elija un numero con el color deseado y enter: \n1 - Blanco \n2 - Azul \n3 - Negro \n")
             color_ar = tipo_color(color)
             if(color_ar != False):
@@ -143,7 +143,7 @@ def clase_principal():
         cant_clientes = len(clientes)
         total_auto(full_name, marca_ar, puertas_ar, color_ar,cant_clientes)
 
-    agregar_cliente = int(input("Ingrese un numero y presione enter: 1 - Crear un cliente\n 2 - Finalizar"))            
+        agregar_cliente = int(input("Ingrese un numero y presione enter:\n 1 - Crear un cliente\n 2 - Finalizar\n"))            
      
 #======================main===================
 
