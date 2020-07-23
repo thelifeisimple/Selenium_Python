@@ -27,7 +27,12 @@ def definir_marca(marca_ar):
     else:
         print(" ERROR: Valor incorrecto marca: " + d_marca)
         return 0
-
+# tambien esto se podria hacer con una lista y  While ASI:
+# marca[x,y,z] 
+# while marca not in marca
+#   marca= input('Ingrese una marca: ')
+#   marca = marca.lower() #Pone todo en minuscula // marca. uper() #Pone todo en mayuscula
+#ASI CON TODOS
  
 def cantidad_puertas(puertas_ar):
 

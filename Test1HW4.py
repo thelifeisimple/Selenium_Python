@@ -24,13 +24,13 @@ def alumno(dic_profesores):
             
             if ( item == 'matematicas'):
                 nota_matematicas = int(input("Ingrese la calificación de matematicas del 1-10\n"))
-                print (nota_matematicas)
+                
             if (item == 'lengua'):
                 nota_lengua = int(input("Ingrese la calificación de lengua del 1-10\n"))
-                print (nota_lengua)
+                
             if (item == 'geografia'):
                 nota_geografia = int(input("Ingrese la calificación de geografia del 1-10\n"))
-                print (nota_geografia)
+                
 
     #Se suman las notas de las 3 materias y se dividen entre el total para dar el promedio
     promedio_nota = (nota_matematicas + nota_lengua + nota_geografia)/3
@@ -44,8 +44,11 @@ def alumno(dic_profesores):
 
 dic_profesores = {'nombre_profesor': ['p1', 'p2', 'p3'], 'materia': ['matematicas', 'lengua', 'geografia']}
 
-ingresar_alumno = 1
-while ingresar_alumno == 1:
+ingresar_alumno = '1'
+while ingresar_alumno == '1':
     ingresar_alumno = input("seleccione\n 1 - para ingresar un alumno\n 2 - para finalizar\n")
-    alumno(dic_profesores)
+    if ingresar_alumno == '1':
+        alumno(dic_profesores)
+    else:
+        print("Se termino")
     
